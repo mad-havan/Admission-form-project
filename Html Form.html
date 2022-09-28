@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+    <link rel="stylesheet" type="text/css" href="Html-Form.css">  
+    
+    <script type="text/javascript">  
+        function Focus_In (event) {  
+            event.srcElement.style.color = "grey";  
+                    }  
+        function Focus_Out (event) {  
+            event.srcElement.style.color = "black";  
+        }  
+    </script>  
+
+    <script>
+    function fun() 
+    {
+        alert("You Form got Submitted Successfully");
+        
+    }
+    </script>
+    
+</head>
+<body>
+    <!--style="background-color:rgb(154, 231, 248);">-->
+    <article>
+        <div class="start-para">
+    <h1 id="h1">ML INSTITUTE OF TECHNOLOGY</h1>
+    <h3 id="h2">Nehru Road,Katpadi,Vellore,Tamilnadu-632014</h2>
+    <p style="color:black;font-family:Bahnschrift;font-size:12px;text-align:center;">Email:founder@mlinst.com; website:mlinstituteoftechnology.com</p><br> <hr>
+    <h2 id="main-header"><strong><em>Application for Admission</em></strong></p>
+        </div>
+    </article>
+
+<div class="main-content">
+    <form action="" class="form" onfocusin="Focus_In (event)" onfocusout="Focus_Out (event)">
+        <br></br>
+        <label class="word space" for="fname">First Name:</label><br>
+        <input class="input" type="text" id="fname"required name="fname" value=""required/><br><br>
+        <label class="word" for="lname">Last Name:</label><br>
+        <input class="input" type="text" id="lname" name="lname" value=""><br><br>
+        <label class="word" for="fn">Father's Name:</label><br>
+        <input class="input" type="text" id="fn" name="fn" value="" required/></input><br><br>
+        <label class="word" for="mn">Mother's Name:</label><br>
+        <input class="input" type="text" id="mn" name="mn" value="" required><br><br>
+        <label class="word" for="country">Nationality:</label><br>
+        <input class="input" type="text" id="country" name="country" value="" required><br><br>
+        <label class="word" for="dob">Date of Birth:</label><br>
+        <input class="input" type="date" id="dob" name="dob" value=""><br><br>
+    </form>
+    <form onfocusin="Focus_In (event)" onfocusout="Focus_Out (event)">
+        <label class="word" for="gender">Gender:</label><br>
+        <input type="radio" id="m" name="gender" value="">
+        <label class="word" for="m" > Male</label><br>
+        <input type="radio" id="f" name="gender" value="">
+        <label class="word" for="f" > Female</label><br>
+        <input type="radio" id="Tr" name="gender" value="">
+        <label class="word" for="Tr" > Transgender</label><br>
+        <input type="radio" id="o" name="gender" value="">
+        <label class="word" for="o" > Others</label><br>
+        <input type="radio" id="none" name="gender" value="">
+        <label class="word" for="none" > Prefer not to say</label><br> <br>
+    </form>
+    <form onfocusin="Focus_In (event)" onfocusout="Focus_Out (event)">
+        <label class="word" for="mt">Mother Tongue:</label><br>
+        <input type="text" id="mt" name="mt" value=""><br><br>
+        <label class="word" for="Bg">Blood group:</label><br>
+        <select  id="Bg" name="Bg" >
+            <option value="O+ve">Choose</option>
+            <option value="O+ve">O+ve</option>
+            <option value="O-ve">O-ve</option>
+            <option value="A+ve">A+ve</option>
+            <option value="A-ve">A-ve</option>
+            <option value="B+ve">B+ve</option>
+            <option value="B-ve">B-ve</option>
+            <option value="AB+ve">AB+ve</option>
+            <option value="AB-ve">AB-ve</option>
+        </select> <br> <br>
+        <label class="word" for="rl">Religion:</label><br>
+        <input type="text" id="rl" name="rl" value=""><br><br>
+    </form>
+    <form onfocusin="Focus_In (event)" onfocusout="Focus_Out (event)">
+        <label class="word" for="ph">Mobile Number:</label><br>
+        <input class="no" type="tel" id="ph" name="ph" placeholder="" size="10" value=""><br><br>
+        <label class="word" for="email">Email:</label><br>
+        <input class="no" type="email" placeholder=me@gmail.com id="email" name="email" value="" onblur="myfunction()"><br><br>
+        <label class="word" for="ad">Address:</label><br>
+        <textarea class="add" name="message" rows="9" cols="60" required></textarea><br><br>
+        <label class="word" for="st">State:</label><br>
+        <input type="text" id="st" name="st" value=""><br><br>
+        <label class="word" for="cn">Country:</label><br>
+        <input type="text" id="cn" name="cn" value=""><br><br>
+        <label class="word" for="co">Course:</label><br>
+        <select class="no" id="co" name="co" >
+            <option name="Course"><strong>Choose</strong></option>
+            <option name="B.Tech">B.Tech</option>
+            <option name="B.Arch">B.Arch</option>
+            <option name="BBA">BBA</option>
+            <option name="BCA">BCA</option>
+            <option name="B.COM">B.COM</option>
+        </select> <br> <br>
+        <label class="word" for="adh">Aadhar Card Number:</label><br>
+        <input class="no" type="number" id="adh" name="adh" placeholder="xxxx-xxxx-xxxx" size="12" value=""><br><br>
+        </form>
+        <form onfocusin="Focus_In (event)" onfocusout="Focus_Out (event)">
+        <fieldset>
+            <legend><strong>HIGH SCHOOL QUALIFICATION</strong></legend>
+            <label class="word" for="name">Name of Board:</label><br>
+            <select class="no" id="board" name="board" >
+            <option name="Board">Choose</option>
+            <option name="State">State</option>
+            <option name="CBSE">CBSE</option>
+            <option name="ICSE">ICSE</option> </select><br> <br>
+            <label class="word" for="school">Name of School:</label><br>
+            <input type="text" id="school" name="school" value=""><br><br>
+            <label class="word" for="per">Percentage Obtained:</label><br>
+            <input type="text" id="per" name="per" value=""><br></br>
+            <label class="word" for="myfile">10th Mark Certificate:</label><br>
+            <input class="no" type="file" id="myfile" name="myfile" value="">
+        </fieldset><br> <br>
+        <fieldset>
+            <legend><strong>HIGHER SECONDARY QUALIFICATION</strong></legend>
+            <label class="word" for="name">Name of Board:</label><br>
+            <select class="no" id="board" name="board" >
+            <option name="Board">Choose</option>
+            <option name="State">State</option>
+            <option name="CBSE">CBSE</option>
+            <option name="ICSE">ICSE</option> </select><br> <br>
+            <label class="word" for="school">Name of School:</label><br>
+            <input type="text" id="school" name="school" value=""><br><br>
+            <label class="word" for="per">Percentage Obtained:</label><br>
+            <input type="text" id="per" name="per" value="" required><br> <br>
+            <label class="word" for="myfile">12th Mark Certificate:</label><br>
+            <input class="no" type="file" id="myfile" name="myfile" value="">
+         </fieldset><br> <br>
+         </form>
+         <form onfocusin="Focus_In (event)" onfocusout="Focus_Out (event)">
+            <label class="word" for="myfile">Upload Photo</label><br>
+            <input class="no" type="file" id="myfile" name="myfile" value="">
+            <br> <br>
+            <input type="checkbox" id="check" name="check" value="">
+            <label  for="check">The above information is true to the best of my knowledge</label>
+         <br> <br>
+        </form>
+</div>
+ 
+        <center>
+            <br><br>
+            <input type="submit"  value="Login" class="submit-btn" onclick = "fun()">
+        </center><br></br>
+
+        
+        
+    <center><img src="/college-building-structures-service-500x500.jpg" alt="college building"></center>
+    <footer>
+        <p class="text-white footer-text">
+            Copyright &copy; 2022 Madhavan L
+            .Design:
+            <a href="" class="footer-link">Madhavan L </a>
+        </p>
+    </footer>
+        
+   
+</body>
+</html>
